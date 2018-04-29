@@ -125,8 +125,7 @@ function editamelo(id,name,last,born,country) {
 
 
 
-
-
+git remote add origin crud_javascript.git
 
 
 
