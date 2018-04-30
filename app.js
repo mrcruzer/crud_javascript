@@ -49,8 +49,9 @@ function guardarmelo() {
             <td>${doc.data().last}</td>
             <td>${doc.data().born}</td>
             <td>${doc.data().country}</td>
-            <td><button class="btn btn-danger" onclick="borramelo('${doc.id}')">Delete</button></td>
-            <td><button class="btn btn-success" onclick="editamelo('${doc.id}','${doc.data().first}','${doc.data().last}','${doc.data().born}','${doc.data().country}')">Edit</button></td>
+            <td><i class="far fa-trash-alt fa-parent fa-trash animated" onclick="borramelo('${doc.id}')"></i></td>
+            <td><i class="far fa-edit" onclick="editamelo('${doc.id}','${doc.data().first}','${doc.data().last}','${doc.data().born}','${doc.data().country}')"></i></td>
+
         </tr>
 
         `
@@ -122,7 +123,6 @@ function editamelo(id,name,last,born,country) {
 
     }
     
-
 
 
 
